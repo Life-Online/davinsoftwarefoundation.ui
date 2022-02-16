@@ -1,10 +1,10 @@
 import Image from "next/image"
 import { ArrowRightIcon } from '@heroicons/react/outline'
 
-function CampVolu({data}) {
-    console.log(data, 'camp data')
+function campVolu2({data}) {
+    console.log(data, 'second data')
   return (
-<div className="w-[17rem] h-[13rem] my-5 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+    <div className="w-[17rem] h-[13rem] my-5 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
     <a href="#" className="mt-3">
         <Image width="224px" height="137px"className="rounded-t-lg" src={data.campImg} alt="" />
     </a>
@@ -16,4 +16,4 @@ function CampVolu({data}) {
   )
 }
 
-export default CampVolu
+export default campVolu2

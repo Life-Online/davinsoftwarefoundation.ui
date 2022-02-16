@@ -25,12 +25,14 @@ export const campaignData = [
                 campImg: require('../assets/img/campaign.png').default,
                 campText: 'Find a Campaign'
             },
-            {
-                campImg: require('../assets/img/volunteer.png').default,
-                campText: 'Become a Volunteer'
-            },
             
-        ]
+        ],
+       campVolu2: [
+           {
+            campImg: require('../assets/img/volunteer.png').default,
+            campText: 'Become a Volunteer'
+           }
+       ],
 
     },
 

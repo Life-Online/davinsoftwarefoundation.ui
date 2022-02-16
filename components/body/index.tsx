@@ -1,5 +1,7 @@
 import React from 'react'
 import Campaign from './campaign'
+import Community from './community'
+import Explore from './explore'
 import Lifting from './lifting'
 
 function Body() {
@@ -10,6 +12,12 @@ function Body() {
       </section>
       <section>
         <Campaign/>
+      </section>
+      <section>
+        <Community/>
+      </section>
+      <section>
+        <Explore/>
       </section>
     </div>
   )
