@@ -7,7 +7,7 @@ import TogetherCard from './TogetherCard'
 function Together() {
     const data = TogetherData
   return (
-    <div className= {styles.together} >
+    <div id="exploring" className= {styles.together} >
         {data.map((data, i) => {
             return <TogetherCard data={data} key={i}  />
         })}

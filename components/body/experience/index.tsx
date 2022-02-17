@@ -5,7 +5,7 @@ import ExperienceCard from './ExperienceCard'
 function Experience() {
     const data = ExperienceData
   return (
-    <div className="py-10 my-7 ">
+    <div id="stories" className="py-10 my-7 ">
        {data.map((data, i) => {
            return (
                <>

@@ -1,5 +1,12 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik'), url(../assets/fonts/Aeonik/Aeonik-Air.ttf) format('ttf');
+}
+
+
 @tailwind utilities;
 
 html{
@@ -7,6 +14,7 @@ html{
 }
 *{
   box-sizing: border-box;
+  font-family: Aeonik;
   padding: 0px;
   margin: 0px;
 }

@@ -7,7 +7,7 @@ function Community() {
     const data = CommunityData
     console.log(data, 'community')
   return (
-    <div className="mb-8" >
+    <div id="about" className="mb-8" >
       {data.map((data, i) => {
           return <CommunityCard data={data} key={i} />
       })}

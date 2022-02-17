@@ -10,7 +10,7 @@ import CampVolu2 from './campVolu2';
 function Campaign() {
     const data = campaignData
   return (
-     <div className="relative mb-10">
+     <div id="" className="relative mb-10">
        {data.map((img, i) =>{
          return (
            <div key={i}>

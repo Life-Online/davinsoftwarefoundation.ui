@@ -10,7 +10,7 @@ function Lifting() {
     <>
       {data.map((item, id) =>{
         return(
-          <div key={id} className={styles.liftingContainer}>
+          <div id="home" key={id} className={styles.liftingContainer}>
              <LiftingCard item={item}/>        
           </div> 
         )  
