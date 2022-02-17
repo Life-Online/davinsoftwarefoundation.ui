@@ -27,9 +27,9 @@ function Explore() {
              </div>
            </div>
            <div className="my-4 flex justify-center">
-           {data.campaignCard.map((data) => {
+           {data.campaignCard.map((data, i) => {
              return(
-               <ExploreCard data={data}/>
+               <ExploreCard data={data} key={i} />
              )
            })}
            </div>

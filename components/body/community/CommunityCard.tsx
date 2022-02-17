@@ -5,7 +5,7 @@ function CommunityCard({data}) {
   return (
     <div className="flex flex-row  items-center justify-between">
       <div>
-          <Image src={data.communityImg} />
+          <Image src={data.communityImg} alt=""/>
       </div>
       <div className="w-2/4">
       <button className="bg-[#F5F5F5] text-[#EB4C29] font-normal py-2 px-4 rounded">

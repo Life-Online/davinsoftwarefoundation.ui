@@ -6,7 +6,7 @@ import styles from '../../styles/home/home.module.css'
 
 function HomePage() {
   return (
-    <div className={styles.homepage}>
+    <div className={styles.homepage}  >
       <div>
           <Header/>
       </div>

@@ -24,7 +24,7 @@ function LiftingCard({item}) {
     <div className={styles.liftingCard}> 
       <div className={styles.liftingHeader}>
         {header_container}
-        <span className="text-green-400">{lastWord}</span>
+        <span className="text-[#EB4C29]">{lastWord}</span>
         </div>
      <div className={styles.liftingTitle}>{item.liftTitle}</div> 
     </div>

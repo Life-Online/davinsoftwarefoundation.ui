@@ -5,7 +5,7 @@ function ExploreCard({data}) {
   return (
     <div className="shadow-lg flex flex-row justify-between items-center pl-2 mr-4 rounded-lg ">
       <div>
-          <Image src={data.cardImg} alt="" className="" />
+          <Image src={data.cardImg} alt="" className="w-[100px] h-[100px] " />
       </div>
       <div className="w-[360px] p-5 ">
           <h2 className="font-bold text-[26px] leading-8 ">{data.cardHeader}</h2>

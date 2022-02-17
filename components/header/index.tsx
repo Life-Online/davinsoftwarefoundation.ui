@@ -16,19 +16,6 @@ function Header() {
     // const data = headerData
   return (
     <div>
-  {/* <Navbar bg="dark" variant="dark">
-    <Container className={styles.headerContainer}>
-        <Image src={image} className={styles.navHeadImg} alt='' width={150} height={40} />
-    <Nav className="me-auto">
-      <Nav.Link href="#home" className={styles.navItem}>Home</Nav.Link>
-      <Nav.Link href="#features"className={styles.navItem}>About</Nav.Link>
-      <Nav.Link href="#pricing"className={styles.navItem}>Campaign</Nav.Link>
-      <Nav.Link href="#pricing"className={styles.navItem}>OurService</Nav.Link>
-      <Nav.Link href="#pricing"className={styles.navItem}>Contact</Nav.Link>
-    </Nav>
-    <Button variant="primary text-white" className={styles.navBtn}>Donate</Button>{' '}
-    </Container>
-  </Navbar> */}
   <nav className='flex items-center flex-wrap p-3 '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
