@@ -2,16 +2,15 @@ name: deploy-davin-ui CI
 
 on:
   push:
-    branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
+    branches:
+      - main
+      - develop
 
 jobs:
   build:
     name: Build
     runs-on: self-hosted
     environment: production
-    url: http://davinsoftwarefoundation.org
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
