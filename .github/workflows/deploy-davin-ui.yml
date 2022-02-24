@@ -1,0 +1,22 @@
+name: deploy-davin-ui CI
+
+on: 
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop]
+
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+      - run:
+          npm i
+          npm run build
+          
