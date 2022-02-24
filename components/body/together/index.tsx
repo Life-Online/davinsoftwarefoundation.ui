@@ -5,12 +5,12 @@ import { TogetherData } from '../../../_data/togetherData'
 import TogetherCard from './TogetherCard'
 
 function Together() {
-    const data = TogetherData
+  const data = TogetherData
   return (
-    <div id="exploring" className= {styles.together} >
-        {data.map((data, i) => {
-            return <TogetherCard data={data} key={i}  />
-        })}
+    <div id="exploring" className={styles.together} >
+      {data.map((data: any, i: number) => {
+        return <TogetherCard data={data} key={i} />
+      })}
     </div>
   )
 }
