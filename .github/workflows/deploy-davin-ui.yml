@@ -2,16 +2,15 @@ name: deploy-davin-ui CI
 
 on:
   push:
-    branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
+    branches:
+      - main
+      - develop
 
 jobs:
   build:
     name: Build
     runs-on: self-hosted
     environment: production
-    url: http://davinsoftwarefoundation.org
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -19,10 +18,11 @@ jobs:
           node-version: ${{ secrets.NODE_VERSION }}
       - name: Setup PM2
         run: npm install -g pm2
-      - name: Build Next App
-      - run: npm install
-          npm run build
+      - name: Install App Dependencies
+        run: npm install
+      - name: Build React Application
+        run: npm run build
       - name: Start PM2
-      - run: pm2 stop davin-ui
+        run: pm2 stop davin-ui
           pm2 delete davin-ui
           pm2 start pm2.config.js
