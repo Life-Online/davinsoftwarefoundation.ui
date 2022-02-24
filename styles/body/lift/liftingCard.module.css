@@ -1,0 +1,25 @@
+
+.liftingCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.liftingHeader{
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    width: 547px;
+    height: 164px;
+    color: #000;
+}
+.liftingTitle{
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.005em;
+    width: 480px;
+    height: 48px;
+}
+.liftingTitle::last-word {
+    display: none;
+}

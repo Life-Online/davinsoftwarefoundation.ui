@@ -1,16 +1,20 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik'), url(../assets/fonts/Aeonik/Aeonik-Air.ttf) format('ttf');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+*{
   box-sizing: border-box;
+  font-family: Aeonik;
+  padding: 0px;
+  margin: 0px;
 }

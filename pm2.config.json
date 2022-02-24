@@ -1,0 +1,9 @@
+{
+  "apps": [
+      {
+          "name": "davin-ui",
+          "script": "npm",
+          "args" : "start"
+      }
+  ]
+}
