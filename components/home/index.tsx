@@ -8,13 +8,13 @@ function HomePage() {
   return (
     <div className={styles.homepage}  >
       <div>
-          <Header/>
+        <Header />
       </div>
       <div>
-          <Body/>
+        <Body />
       </div>
       <div>
-          <Footer/>
+        <Footer />
       </div>
     </div>
   )

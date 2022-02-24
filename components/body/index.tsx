@@ -8,24 +8,24 @@ import Together from './together'
 
 function Body() {
   return (
-    <div className="mb-10 " > 
+    <div className="mb-10 " >
       <section>
-        <Lifting/>
+        <Lifting />
       </section>
       <section>
-        <Campaign/>
+        <Campaign />
       </section>
       <section>
-        <Community/>
+        <Community />
       </section>
       <section>
-        <Explore/>
+        <Explore />
       </section>
       <section>
-        <Experience/>
+        <Experience />
       </section>
       <section>
-        <Together/>
+        <Together />
       </section>
     </div>
   )

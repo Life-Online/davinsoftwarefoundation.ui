@@ -13,13 +13,13 @@ function Header() {
   const handleClick = () => {
     setActive(!active);
   };
-    // const data = headerData
+  // const data = headerData
   return (
     <div>
-  <nav className='flex items-center flex-wrap p-3 '>
+      <nav className='flex items-center flex-wrap p-3 '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
-           <Image src={image} className={styles.navHeadImg} alt='' width={170} height={40}/>
+            <Image src={image} className={styles.navHeadImg} alt='' width={170} height={40} />
           </a>
         </Link>
         <button
@@ -42,9 +42,8 @@ function Header() {
           </svg>
         </button>
         <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:flex lg:justify-between lg:flex-grow lg:w-auto`}
+          className={`${active ? '' : 'hidden'
+            }   w-full lg:flex lg:justify-between lg:flex-grow lg:w-auto`}
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start mr-10  flex flex-col lg:h-auto'>
             <Link href='#home'>
@@ -73,7 +72,7 @@ function Header() {
               </a>
             </Link>
           </div>
-          <button type="button"  className=" navBtn text-white bg-[#EB4C29]  focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-7 py-2.5 text-center mb-2">Donate</button>
+          <button type="button" className=" navBtn text-white bg-[#EB4C29]  focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-7 py-2.5 text-center mb-2">Donate</button>
         </div>
       </nav>
     </div>
