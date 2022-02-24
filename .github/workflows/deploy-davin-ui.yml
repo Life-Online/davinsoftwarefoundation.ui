@@ -23,4 +23,4 @@ jobs:
       - name: Build React Application
         run: npm run build
       - name: Start PM2
-        run: "pm2 delete --silent davin-ui; pm2 start pm2.config.json"
+        run: "pm2 delete --silent davin-ui || :; pm2 start pm2.config.json"
