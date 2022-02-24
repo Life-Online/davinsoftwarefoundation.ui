@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Container, Nav, Navbar } from 'react-bootstrap'
 import styles from '../../styles/header/header.module.css'
 import image from '../../assets/img/Group 2.png'
-// import {headerData} from '../../_data/headerData'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -13,7 +12,6 @@ function Header() {
   const handleClick = () => {
     setActive(!active);
   };
-  // const data = headerData
   return (
     <div>
       <nav className='flex items-center flex-wrap p-3 '>
