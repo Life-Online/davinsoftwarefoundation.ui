@@ -2,15 +2,20 @@ import Image from 'next/image'
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 import TutorsCard from './TutorsCard'
+import styles from '../../../styles/body/experience/experinceCard.module.scss'
 
 function ExperienceCard({ data }: { data: any }) {
   return (
-    <Card style={{ width: '18rem' }} className=" p-2 my-5 bg-white rounded-lg border border-gray-200 shadow-xl  flex flex-col items-center" >
-      <Image src={data.traningImg} alt="" />
+    <>
+    <div className="container"> 
+      <div className="row">
+        <div className="col col-md-4 col-sm-12 col-xs-12">
+    <Card style={{ width: '' }} className={` p-2 my-5 bg-white rounded-lg border border-gray-200 shadow-xl   ${styles.experienceCardContainer}`} >
+      <Image src={data.traningImg} className={`${styles.experienceCardImg}`} alt="" />
       <Card.Body>
-        <Card.Text className="my-2 font-normal text-[12px] text-[#EB4C29]  dark:text-white" >{data.smallText}</Card.Text>
-        <Card.Title className="font-bold text-[20px]  my-2 ">{data.heading}</Card.Title>
-        <Card.Text className="font-normal text-[16px]" >
+        <Card.Text className={`my-2  text-[#EB4C29]  dark:text-white ${styles.experienceSmallText} `  }>{data.smallText}</Card.Text>
+        <Card.Title className={` my-2 ${styles.experienceCardTitle} `}>{data.heading}</Card.Title>
+        <Card.Text className={` ${styles.experienceText} `} >
           {data.text}
         </Card.Text>
         {data.tutors.map((data: any, i: number) => {
@@ -18,6 +23,10 @@ function ExperienceCard({ data }: { data: any }) {
         })}
       </Card.Body>
     </Card>
+      </div>
+      </div>
+     </div>
+   </>
   )
 }
 

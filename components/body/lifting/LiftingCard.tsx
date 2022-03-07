@@ -1,6 +1,7 @@
 
 import React from 'react'
-import styles from '../../../styles/body/lift/liftingCard.module.css'
+import {Container, Col, Row} from 'react-bootstrap'
+import styles from '../../../styles/body/lift/liftingCard.module.scss'
 
 function LiftingCard({ item }: { item: any }) {
   var lastWord = "";
@@ -20,13 +21,18 @@ function LiftingCard({ item }: { item: any }) {
   console.log(lastWord, "Lastword")
 
 
-  return (
-    <div className={styles.liftingCard}>
-      <div className={styles.liftingHeader}>
+  return ( 
+
+    <div className= {`container ${styles.liftingCard}`} >
+      <div className="row justify-content-between items-center">
+        <div className={`col-8 ${styles.liftingHeader}`}>
         {header_container}
-        <span className="text-[#EB4C29]">{lastWord}</span>
+        <span>{lastWord}</span>
+        </div>
+        <div className={`col-5 text-end  ${styles.liftingTitle} `}>
+        {item.liftTitle}
+        </div>
       </div>
-      <div className={styles.liftingTitle}>{item.liftTitle}</div>
     </div>
   )
 }

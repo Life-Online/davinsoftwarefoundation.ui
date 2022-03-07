@@ -1,0 +1,33 @@
+
+.campVoluCard{
+
+    height: 13rem;
+    border-radius: 20px !important;
+}
+
+.campCardBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center !important;
+}
+.campVoluText{
+    color: #EB4C29;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px){
+    .campVoluCard{
+    
+        height: 9rem;
+        width: 10rem;
+        padding: 0;
+      
+    }
+    .campVoluText{
+        color: #EB4C29;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}

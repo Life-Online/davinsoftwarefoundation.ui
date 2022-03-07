@@ -1,0 +1,15 @@
+
+.homepage{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 932px) {
+    .homepage {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 512px) {
+    .homepage {
+       width: 100%;
+    }
+}

@@ -6,9 +6,11 @@ import Explore from './explore'
 import Lifting from './lifting'
 import Together from './together'
 
+import styles from  '../../styles/body/body.module.scss'
+{`container ${styles.liftingContainer}`}
 function Body() {
   return (
-    <div className="mb-10 " >
+    <div className= {`my-5 ${styles.bodyContainer}`} >
       <section>
         <Lifting />
       </section>

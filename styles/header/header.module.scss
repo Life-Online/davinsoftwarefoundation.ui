@@ -1,0 +1,12 @@
+
+.navHeader{
+    margin: 0 auto;
+    width: 85%;
+    a{
+        color: black;
+
+        &:hover{
+            color: #EB4C29 !important;
+        }
+    }
+}
