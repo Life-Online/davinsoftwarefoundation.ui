@@ -12,7 +12,7 @@ function Header() {
     setActive(!active);
   };
   return (
-    <div className={styles.navHeader}>
+    <div className={`container ${styles.navHeader}`}>
       <nav className='flex items-center flex-wrap '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
@@ -69,7 +69,11 @@ function Header() {
               </a>
             </Link>
           </div>
+          <Link href="/donate">
+            <a>
           <button type="button" className=" navBtn text-white bg-[#EB4C29]  focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-7 py-2.5 text-center mb-2">Donate</button>
+          </a>
+          </Link>
         </div>
       </nav>
     </div>
