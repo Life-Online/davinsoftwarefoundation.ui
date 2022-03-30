@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../../styles/donatePage/home/donateHomePage.module.scss'
-import Header from '../../header'
+import Header from '../../layout/Header/Header'
 import DonateBody from '../../donatePage/body'
 
 function DonatePage() {
@@ -13,7 +13,6 @@ function DonatePage() {
         <DonateBody />
       </div>
       <div> 
-        {/* <Footer /> */}
       </div>
     </div>
   )

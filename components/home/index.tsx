@@ -1,23 +1,17 @@
-import React from 'react'
-import Body from '../body'
-import Header from '../header'
-import Footer from '../footer'
-import styles from '../../styles/home/home.module.scss'
+import React from "react";
+import Body from "../body";
+import Header from "../layout/Header/Header";
+import Footer from "../layout/Footer/Footer";
+import styles from "../../styles/home/home.module.scss";
 
 function HomePage() {
   return (
     <div className={styles.homepage}>
-      <div>
-        <Header />
-      </div>
-      <div>
-        <Body />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Header />
+      <Body />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

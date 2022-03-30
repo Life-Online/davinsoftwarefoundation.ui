@@ -1,0 +1,20 @@
+.navHeader {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+
+  a {
+    color: black;
+
+    &:hover,
+    .active {
+      color: #eb4c29 !important;
+    }
+
+    .active {
+      font-weight: 600;
+    }
+  }
+}
