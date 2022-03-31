@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "bootstrap.custom";
 
 @font-face {
   font-family: "Aeonik";
@@ -20,4 +18,8 @@ html {
 
 a {
   text-decoration: none !important;
+}
+
+main {
+  margin-top: 73px;
 }

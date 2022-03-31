@@ -1,20 +1,29 @@
-.navHeader {
-  margin: 0 auto;
+@use "../../../styles/global.variables" as vars;
+
+.mainNav {
+  background: vars.$white;
   position: fixed;
+  width: 100%;
   top: 0;
-  background: #fff;
-  z-index: 100;
+  z-index: 1000;
 
   a {
-    color: black;
+    color: vars.$black;
+    font-weight: 500;
 
-    &:hover,
-    .active {
-      color: #eb4c29 !important;
+    &:hover {
+      color: vars.$primary;
     }
+  }
 
-    .active {
-      font-weight: 600;
-    }
+  .active {
+    color: vars.$primary;
+  }
+
+  .navCta {
+    background-color: vars.$primary;
+    color: vars.$white;
+    border-radius: 30px;
+    font-weight: 500;
   }
 }
