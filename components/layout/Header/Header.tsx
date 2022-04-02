@@ -54,7 +54,7 @@ function Header() {
   }, [router]);
 
   return (
-    <Navbar expand="sm" className={styles.mainNav}>
+    <Navbar expand="sm" className={styles.mainNav} as={"header"}>
       <Container>
         <nav className="d-flex align-items-center w-100 justify-content-center">
           <Link href="/">

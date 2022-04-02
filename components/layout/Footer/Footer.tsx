@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
-import image from "../../../assets/img/Group 2.png";
+import AltLogo from "../../../assets/img/davin-logo-alt.svg";
 import styles from "./footer.module.scss";
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
           <div className={`col-5   py-5 ${styles.footerColOne} `}>
             <Link href="#home">
               <a>
-                <Image src={image} alt="" />
+                <Image src={AltLogo} alt="" />
               </a>
             </Link>
             <p className={` text-[#fff] ${styles.footerColOneText} `}>
