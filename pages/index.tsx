@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
+// import Body from '../components/body/index';
 
 const Home: NextPage = () => {
-  return <div></div>;
+  return <div>
+    {/* <Body/> */}
+  </div>;
 };
 
 export default Home;

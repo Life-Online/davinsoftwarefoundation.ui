@@ -12,9 +12,7 @@ function Lifting() {
         return (
           <>
           <div className={`container py-3 mb-2  fluid ${styles.liftingContainer}`} id="home" key={id}  >
-  
                 <LiftingCard item={item} />
-          
           </div>
           </>
         )
