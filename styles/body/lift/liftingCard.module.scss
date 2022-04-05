@@ -1,50 +1,49 @@
-
-.liftingCard{
-    .liftingHeader{
-        flex: 1;
-        font-size: 45px;
-        font-weight: 500;
-        letter-spacing: -0.025em;
-        width: 547px;
-        height: 164px;
-        color: #000;
-        span{
-            color: #EB4C29;
-        }
+.liftingCard {
+  .liftingHeader {
+    flex: 1;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    width: 547px;
+    height: 164px;
+    color: #000;
+    span {
+      color: #eb4c29;
     }
+  }
 }
 
-.liftingTitle{
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 0.005em;
-    width: 480px;
-    height: 48px;
+.liftingTitle {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  width: 480px;
+  height: 48px;
 }
 
-@media only screen and (max-width: 1025px){
-    .liftingCard{
-        width: 100%;
-       .liftingHeader{
-           font-size: 30px;
-           font-weight: 500;
-           width: 300px;
-           height: 100px;
-       }
-       .liftingTitle{
-           font-weight: normal;
-           font-size: 10px;
-       }
+@media only screen and (max-width: 1025px) {
+  .liftingCard {
+    width: 100%;
+    .liftingHeader {
+      font-size: 30px;
+      font-weight: 500;
+      width: 300px;
+      height: 100px;
     }
+    .liftingTitle {
+      font-weight: normal;
+      font-size: 10px;
+    }
+  }
 }
-@media only screen and (max-width: 768px){
-    .liftingCard{
-        width: 100%;
-       .liftingHeader{
-           font-size: 20px;
-           font-weight: 500;
-           width: 300px;
-           height: 100px;
-       }
+@media only screen and (max-width: 768px) {
+  .liftingCard {
+    width: 100%;
+    .liftingHeader {
+      font-size: 20px;
+      font-weight: 500;
+      width: 300px;
+      height: 100px;
     }
+  }
 }
