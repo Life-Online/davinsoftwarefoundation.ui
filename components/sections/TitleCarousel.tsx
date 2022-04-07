@@ -12,25 +12,24 @@ type TitleCarouselProps = {
 
 const TitleCarousel = ({ titleCarouselData }: TitleCarouselProps) => {
   return (
-    <section className="py-3">
+    <React.Fragment>
       {titleCarouselData.map((item, id) => {
         return (
-          <div className="container py-3 mb-3" key={id}>
-            <div className="row justify-content-between items-center">
-              <div className="col-7">
-                <EmphasizedTitle
-                  title={item.title}
-                  emphasizedText={item.emphasizedTitle}
-                />
-              </div>
-              <div className={`col-5 pt-3 ${styles.content}`}>
-                {item.content}
-              </div>
+          <section
+            className="row justify-content-between items-center py-3 mb-3"
+            key={id}
+          >
+            <div className="col-7">
+              <EmphasizedTitle
+                title={item.title}
+                emphasizedText={item.emphasizedTitle}
+              />
             </div>
-          </div>
+            <div className={`col-5 pt-3 ${styles.content}`}>{item.content}</div>
+          </section>
         );
       })}
-    </section>
+    </React.Fragment>
   );
 };
 

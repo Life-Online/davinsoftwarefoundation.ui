@@ -24,3 +24,11 @@ a {
 main {
   margin-top: 73px;
 }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
