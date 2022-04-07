@@ -21,14 +21,16 @@ const HeroData = {
   },
   heroLinkCards: {
     cardOne: {
-      image: "../",
-      text: "Find a Campaign",
-      link: "./",
-    },
-    cardTwo: {
-      image: "../",
+      imageURL: "/img/link-card-volunteer.png",
       text: "Become a Volunteer",
       link: "./",
+      emphasizedText: "Volunteer",
+    },
+    cardTwo: {
+      imageURL: "/img/link-card-campaign.png",
+      text: "Find a Campaign",
+      link: "./",
+      emphasizedText: "Campaign",
     },
   },
 };

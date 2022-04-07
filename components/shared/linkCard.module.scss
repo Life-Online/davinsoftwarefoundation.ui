@@ -1,0 +1,31 @@
+@use "../../styles/global.mixins" as mixins;
+
+.linkCard {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.2rem;
+  @include mixins.shadow(0 0 10px 0 rgba(0, 0, 0, 0.1));
+
+  .linkCardImage {
+    border-radius: 1rem;
+  }
+
+  .linkCardBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .linkCardArrow {
+    width: 1rem;
+    @include mixins.transform(translateX(-10px));
+    @include mixins.transition(all);
+  }
+
+  &:hover {
+    .linkCardArrow {
+      @include mixins.transform(translateX(0));
+    }
+  }
+}

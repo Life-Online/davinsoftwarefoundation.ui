@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./hero.module.scss";
+import LinkCard from "../shared/LinkCard";
+import ImpactMetrics from "../shared/ImpactMetrics";
 
 type HeroSectionProps = {
   heroSectionData: {
@@ -12,49 +14,57 @@ type HeroSectionProps = {
       metrics: { impact: string; description: string }[];
     };
     heroLinkCards: {
-      cardOne: { image: string; text: string; link: string };
-      cardTwo: { image: string; text: string; link: string };
+      cardOne: {
+        imageURL: string;
+        text: string;
+        emphasizedText: string;
+        link: string;
+      };
+      cardTwo: {
+        imageURL: string;
+        text: string;
+        emphasizedText: string;
+        link: string;
+      };
     };
   };
 };
 
-type HeroLinkCardProps = {
-  image: string;
-  text: string;
-  link: string;
-};
-
-const HeroLinkCard = ({ image, text, link }: HeroLinkCardProps) => {
-  return (
-    <div className={`card p-2    ${styles.campVoluCard}`}>
-      <Image
-        src={data.campImg}
-        className={`card-img-top p-1 ${styles.campImg} `}
-        alt=""
-      />
-      <div className={`p-2 mx-2   ${styles.campCardBody}`}>
-        <p className={`card-text  ${styles.campVoluText} `}>{data.campText}</p>
-        <ArrowRightIcon className="h-4 w-4 mb-3  text-[#EB4C29]" />
-      </div>
-    </div>
-  );
-};
-
 const Hero = ({ heroSectionData }: HeroSectionProps) => {
+  const cardOneData = heroSectionData?.heroLinkCards?.cardOne;
+  const cardTwoData = heroSectionData?.heroLinkCards?.cardTwo;
+  const impactMetricsData = heroSectionData?.impactMetrics;
+
   return (
-    <section className="row">
-      <div className="col-11">
-        <div className={styles.heroSpotLightContainer}>
-          <Image
-            className={styles.heroImage}
-            src={heroSectionData.heroImage}
-            alt=""
-            width={1080}
-            height={520}
-            objectFit="contain"
-            layout="responsive"
-          />
+    <section className="row overflow-hidden">
+      <div className="position-relative w-100">
+        <div className="col-11">
+          <div className={styles.heroSpotLightContainer}>
+            <Image
+              className={styles.heroImage}
+              src={heroSectionData.heroImage}
+              alt=""
+              width={1080}
+              height={520}
+              objectFit="contain"
+              layout="responsive"
+            />
+          </div>
         </div>
+        <div className={styles.cardOne}>
+          {cardOneData ? <LinkCard linkCardData={cardOneData} /> : ""}
+        </div>
+      </div>
+      <div className="col-4 position-relative">
+        <div className={styles.dotGridContainer}>
+          <Image src="/img/dot-grid.svg" width={150} height={150} />
+        </div>
+        <div className={styles.cardTwo}>
+          {cardTwoData ? <LinkCard linkCardData={cardTwoData} /> : ""}
+        </div>
+      </div>
+      <div className="col-7">
+        <ImpactMetrics impactMetricsData={impactMetricsData} />
       </div>
     </section>
   );

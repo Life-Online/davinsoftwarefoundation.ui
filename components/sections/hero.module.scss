@@ -1,6 +1,39 @@
+@use "../../styles/global.mixins" as mixins;
+
 .heroSpotLightContainer {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
   width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  min-height: 300px;
+  background: #eee;
+}
+
+.cardOne,
+.cardTwo {
+  position: absolute;
+  width: 17.5vw;
+  max-width: 300px;
+}
+
+.cardOne {
+  right: 0;
+  top: 50%;
+  @include mixins.transform(translateY(-50%));
+}
+
+.cardTwo {
+  right: 0;
+  top: 0;
+  @include mixins.transform(translateY(-50%));
+}
+
+.dotGridContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-left: -3vw;
 }

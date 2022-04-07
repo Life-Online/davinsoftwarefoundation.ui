@@ -1,0 +1,26 @@
+@use "../../styles/global.variables" as vars;
+
+.impactMetricContainer {
+  width: 100%;
+  position: relative;
+
+  .impactMetricTitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: vars.$primary;
+    margin-bottom: 25px;
+  }
+
+  .impact {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    line-height: 150%;
+    letter-spacing: 0.005em;
+  }
+}

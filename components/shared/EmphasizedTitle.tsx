@@ -7,7 +7,9 @@ type EmpahasizedTitleProps = {
 };
 
 const EmphasizedTitle = ({ title, emphasizedText }: EmpahasizedTitleProps) => {
-  const emphasizedTextPosition = title.indexOf(emphasizedText);
+  const emphasizedTextPosition = title
+    .toLowerCase()
+    .indexOf(emphasizedText.toLowerCase());
   if (emphasizedTextPosition >= 0) {
     const pretext = title.slice(0, emphasizedTextPosition);
     const postText = title.slice(
