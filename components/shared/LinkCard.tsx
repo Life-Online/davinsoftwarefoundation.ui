@@ -4,15 +4,7 @@ import Link from "next/link";
 import styles from "./linkCard.module.scss";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import EmphasizedText from "../shared/EmphasizedText";
-
-type LinkCardProps = {
-  linkCardData: {
-    imageURL: string;
-    text: string;
-    link: string;
-    emphasizedText: string;
-  };
-};
+import { LinkCardProps } from "../../models/shared.model";
 
 const LinkCard = ({ linkCardData }: LinkCardProps) => {
   return (

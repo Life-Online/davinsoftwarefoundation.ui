@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "./emphasizedText.module.scss";
-
-type EmpahasizedTextProps = {
-  text: string;
-  emphasizedText: string;
-};
+import { EmpahasizedTextProps } from "../../models/shared.model";
 
 const EmphasizedText = ({ text, emphasizedText }: EmpahasizedTextProps) => {
   const emphasizedTextPosition = text

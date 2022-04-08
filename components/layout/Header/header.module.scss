@@ -1,4 +1,5 @@
 @use "../../../styles/global.variables" as vars;
+@use "../../../styles/global.mixins" as mixins;
 
 .mainNav {
   background: vars.$white;
@@ -21,9 +22,6 @@
   }
 
   .navCta {
-    background-color: vars.$primary;
-    color: vars.$white;
-    border-radius: 30px;
-    font-weight: 500;
+    @include mixins.primary-button;
   }
 }

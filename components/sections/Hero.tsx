@@ -3,32 +3,7 @@ import Image from "next/image";
 import styles from "./hero.module.scss";
 import LinkCard from "../shared/LinkCard";
 import ImpactMetrics from "../shared/ImpactMetrics";
-
-type HeroSectionProps = {
-  heroSectionData: {
-    heroImage: string;
-    heroVideo: string;
-    useHeroVideo: boolean;
-    impactMetrics: {
-      title: string;
-      metrics: { impact: string; description: string }[];
-    };
-    heroLinkCards: {
-      cardOne: {
-        imageURL: string;
-        text: string;
-        emphasizedText: string;
-        link: string;
-      };
-      cardTwo: {
-        imageURL: string;
-        text: string;
-        emphasizedText: string;
-        link: string;
-      };
-    };
-  };
-};
+import { HeroSectionProps } from "../../models/home.model";
 
 const Hero = ({ heroSectionData }: HeroSectionProps) => {
   const cardOneData = heroSectionData?.heroLinkCards?.cardOne;
@@ -36,7 +11,7 @@ const Hero = ({ heroSectionData }: HeroSectionProps) => {
   const impactMetricsData = heroSectionData?.impactMetrics;
 
   return (
-    <section className="row overflow-hidden">
+    <section className="row overflow-hidden mt-5">
       <div className="position-relative w-100">
         <div className="col-11">
           <div className={styles.heroSpotLightContainer}>

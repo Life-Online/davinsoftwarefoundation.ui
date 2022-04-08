@@ -1,10 +1,12 @@
+@use "../../styles/global.variables" as vars;
+
 .title {
   flex: 1;
-  font-size: 45px;
+  font-size: vars.$display;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.25;
-  color: #000;
+  color: vars.$secondary;
 
   .emphasizedTitle {
     color: #eb4c29;

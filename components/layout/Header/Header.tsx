@@ -5,6 +5,7 @@ import Logo from "../../../assets/img/davin-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { ActivePageLinks } from "../../../models/home.model";
 
 const topRoutes: { route: string; pathName: string; label: string }[] = [
   { route: "/", pathName: "home", label: "Home" },
@@ -13,10 +14,6 @@ const topRoutes: { route: string; pathName: string; label: string }[] = [
   { route: "/stories", pathName: "stories", label: "Our Stories" },
   { route: "/contact", pathName: "contact", label: "Contact" },
 ];
-
-interface ActivePageLinks {
-  [key: string]: boolean;
-}
 
 const initialLinkState: ActivePageLinks = {
   home: false,

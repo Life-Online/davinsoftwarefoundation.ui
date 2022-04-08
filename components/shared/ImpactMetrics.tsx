@@ -1,12 +1,6 @@
 import React from "react";
 import styles from "./impactMetrics.module.scss";
-
-type ImpactMetricsProps = {
-  impactMetricsData: {
-    title: string;
-    metrics: { impact: string; description: string }[];
-  };
-};
+import { ImpactMetricsProps } from "../../models/shared.model";
 
 const ImpactMetrics = ({ impactMetricsData }: ImpactMetricsProps) => {
   return (

@@ -1,14 +1,7 @@
 import React from "react";
 import EmphasizedTitle from "../shared/EmphasizedTitle";
 import styles from "./titleCarousel.module.scss";
-
-type TitleCarouselProps = {
-  titleCarouselData: {
-    title: string;
-    emphasizedTitle: string;
-    content: string;
-  }[];
-};
+import { TitleCarouselProps } from "../../models/home.model";
 
 const TitleCarousel = ({ titleCarouselData }: TitleCarouselProps) => {
   return (
@@ -22,7 +15,7 @@ const TitleCarousel = ({ titleCarouselData }: TitleCarouselProps) => {
             <div className="col-7">
               <EmphasizedTitle
                 title={item.title}
-                emphasizedText={item.emphasizedTitle}
+                emphasizedTitle={item.emphasizedTitle}
               />
             </div>
             <div className={`col-5 pt-3 ${styles.content}`}>{item.content}</div>
