@@ -2,11 +2,26 @@
 
 .title {
   flex: 1;
-  font-size: vars.$display;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.25;
   color: vars.$secondary;
+
+  &.display {
+    font-size: vars.$display;
+  }
+
+  &.header1 {
+    font-size: vars.$header-1;
+  }
+
+  &.header2 {
+    font-size: vars.$header-2;
+  }
+
+  &.header3 {
+    font-size: vars.$header-3;
+  }
 
   .emphasizedTitle {
     color: #eb4c29;

@@ -1,0 +1,10 @@
+.swiperControlContainer {
+  display: flex;
+  gap: 0.25rem;
+
+  .swiperControl {
+    height: 2.25rem;
+    cursor: pointer;
+    color: #ea4d37;
+  }
+}

@@ -25,11 +25,9 @@ export type HeroSectionProps = {
 };
 
 export type TitleCarouselProps = {
-  titleCarouselData: {
-    title: string;
-    emphasizedTitle: string;
-    content: string;
-  }[];
+  title: string;
+  emphasizedTitle?: string;
+  content: string;
 };
 
 export interface ActivePageLinks {

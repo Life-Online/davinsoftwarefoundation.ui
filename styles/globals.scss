@@ -23,6 +23,7 @@ a {
 
 main {
   margin-top: 73px;
+  overflow-x: hidden;
 }
 
 section + section {
@@ -35,4 +36,15 @@ section + section {
   gap: 0;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
+}
+
+.swiper {
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.swiper-slide {
+  height: unset !important;
 }

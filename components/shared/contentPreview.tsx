@@ -18,7 +18,7 @@ const ContentPreview = ({
           <div className={styles.previewImageContainer}>
             <Image
               className={styles.previewImage}
-              src={previewData.imageURL}
+              src={`${previewData.imageURL}`}
               alt={previewData.title}
               width={480}
               height={596}
