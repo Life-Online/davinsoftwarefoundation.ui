@@ -1,7 +1,10 @@
 import React from "react";
-import { CampaignPreviewProps } from "../../models/shared.model";
+import {
+  CampaignPreviewProps,
+  SectionTitleProps,
+} from "../../models/shared.model";
 import SectionTag from "../shared/SectionTag";
-import TitleCarousel from "./TitleCarousel";
+import SectionTitleLeft from "../shared/SectionTitleLeft";
 import CampaignCard from "../shared/CampaignCard";
 import SwiperSlider from "../shared/SwiperSlider";
 
@@ -10,29 +13,19 @@ function CampaignPreview({
 }: {
   campaignPreviewData: CampaignPreviewProps;
 }) {
-  const titleCarouselData = {
-    title: campaignPreviewData.previewData.title,
-    content: campaignPreviewData.previewData.text,
-  };
-
   const CampaignCardArray: JSX.Element[] = [];
-  campaignPreviewData.campaignCardData.map((cardData) => {
+  campaignPreviewData.campaigns.map((cardData) => {
     CampaignCardArray.push(<CampaignCard campaignPreviewData={cardData} />);
   });
 
-  console.log(CampaignCardArray);
-
   return (
-    <section className="row">
+    <section className="row py-5">
       <div className="col-12">
-        <SectionTag sectionTag={campaignPreviewData.sectionTag} />
+        <SectionTag sectionTag={campaignPreviewData.sectionTitle.sectionTag} />
       </div>
-      <TitleCarousel
-        titleCarouselData={titleCarouselData}
-        titleSize="header1"
-      />
-      <div className="col-12 py-5 position-relative">
-        <SwiperSlider carouselList={CampaignCardArray} />
+      <SectionTitleLeft sectionTitlelData={campaignPreviewData.sectionTitle} />
+      <div className="col-12 py-3 position-relative">
+        <SwiperSlider carouselList={CampaignCardArray} link={"/campaigns"} />
       </div>
     </section>
   );

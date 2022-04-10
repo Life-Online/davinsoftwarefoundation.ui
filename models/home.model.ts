@@ -1,33 +1,14 @@
-export type HeroSectionProps = {
-  heroSectionData: {
-    heroImage: string;
-    heroVideo: string;
-    useHeroVideo: boolean;
-    impactMetrics: {
-      title: string;
-      metrics: { impact: string; description: string }[];
-    };
-    heroLinkCards: {
-      cardOne: {
-        imageURL: string;
-        text: string;
-        emphasizedText: string;
-        link: string;
-      };
-      cardTwo: {
-        imageURL: string;
-        text: string;
-        emphasizedText: string;
-        link: string;
-      };
-    };
-  };
-};
+import { ImpactMetricsModel, LinkCardModel } from "./shared.model";
 
-export type TitleCarouselProps = {
-  title: string;
-  emphasizedTitle?: string;
-  content: string;
+export type HeroSectionProps = {
+  heroImage: string;
+  heroVideo: string;
+  useHeroVideo: boolean;
+  impactMetrics: ImpactMetricsModel;
+  heroLinkCards: {
+    cardOne: LinkCardModel;
+    cardTwo: LinkCardModel;
+  };
 };
 
 export interface ActivePageLinks {

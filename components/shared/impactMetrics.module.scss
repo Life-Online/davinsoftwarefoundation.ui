@@ -13,10 +13,11 @@
   }
 
   .impact {
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: vars.$header-2;
     line-height: 130%;
     margin-bottom: 10px;
+    color: vars.$secondary;
   }
 
   .description {

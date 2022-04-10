@@ -4,9 +4,9 @@ import Link from "next/link";
 import styles from "./linkCard.module.scss";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import EmphasizedText from "../shared/EmphasizedText";
-import { LinkCardProps } from "../../models/shared.model";
+import { LinkCardModel } from "../../models/shared.model";
 
-const LinkCard = ({ linkCardData }: LinkCardProps) => {
+const LinkCard = ({ linkCardData }: { linkCardData: LinkCardModel }) => {
   return (
     <div className={`card ${styles.linkCard}`}>
       <Link href={`/${linkCardData.link}`}>

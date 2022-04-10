@@ -1,15 +1,15 @@
 import React from "react";
 import ContentPreview from "../shared/contentPreview";
-import { PreviewData } from "../../models/shared.model";
+import { ContentPreviewProps } from "../../models/shared.model";
 
-function AboutPreview({ aboutPreviewData }: { aboutPreviewData: PreviewData }) {
+function AboutPreview({
+  aboutPreviewData,
+}: {
+  aboutPreviewData: ContentPreviewProps;
+}) {
   return (
-    <section className="row">
-      <ContentPreview
-        previewData={aboutPreviewData}
-        reverse={false}
-        sectionTag={"About Us"}
-      />
+    <section className="row py-5">
+      <ContentPreview contentPreview={aboutPreviewData} />
     </section>
   );
 }

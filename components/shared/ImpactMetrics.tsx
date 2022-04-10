@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./impactMetrics.module.scss";
-import { ImpactMetricsProps } from "../../models/shared.model";
+import { ImpactMetricsModel } from "../../models/shared.model";
 
-const ImpactMetrics = ({ impactMetricsData }: ImpactMetricsProps) => {
+const ImpactMetrics = ({
+  impactMetricsData,
+}: {
+  impactMetricsData: ImpactMetricsModel;
+}) => {
   return (
     <div className={`container mt-3 p-3  ${styles.impactMetricContainer} `}>
       <div className="row">

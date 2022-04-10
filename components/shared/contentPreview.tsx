@@ -7,19 +7,23 @@ import { Button } from "react-bootstrap";
 import SectionTag from "./SectionTag";
 
 const ContentPreview = ({
-  previewData,
-  reverse,
-  sectionTag,
-}: ContentPreviewProps) => {
+  contentPreview,
+}: {
+  contentPreview: ContentPreviewProps;
+}) => {
   return (
     <div className="container">
-      <div className={`row d-flex ${reverse ? "flex-row-reverse" : ""}`}>
+      <div
+        className={`row d-flex ${
+          contentPreview.reverse ? "flex-row-reverse" : ""
+        }`}
+      >
         <div className="col-6">
           <div className={styles.previewImageContainer}>
             <Image
               className={styles.previewImage}
-              src={`${previewData.imageURL}`}
-              alt={previewData.title}
+              src={`${contentPreview.sectionTitle.imageURL}`}
+              alt={contentPreview.sectionTitle.title}
               width={480}
               height={596}
               layout="responsive"
@@ -28,13 +32,13 @@ const ContentPreview = ({
         </div>
         <div className="col-6">
           <div className={styles.previewContentContainer}>
-            <SectionTag sectionTag={sectionTag} />
+            <SectionTag sectionTag={contentPreview.sectionTitle.sectionTag} />
             <div className={styles.previewContentTitle}>
-              {previewData.title}
+              {contentPreview.sectionTitle.title}
             </div>
-            <div className="pt-3 pb-5">{previewData.text}</div>
-            {previewData.link ? (
-              <Link href={previewData.link}>
+            <div className="pt-3 pb-5">{contentPreview.sectionTitle.text}</div>
+            {contentPreview.sectionTitle.link ? (
+              <Link href={contentPreview.sectionTitle.link}>
                 <a>
                   <Button className={`px-4 py-2 ${styles.actionButton}`}>
                     Learn More

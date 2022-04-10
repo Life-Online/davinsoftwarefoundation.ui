@@ -5,7 +5,7 @@ import LinkCard from "../shared/LinkCard";
 import ImpactMetrics from "../shared/ImpactMetrics";
 import { HeroSectionProps } from "../../models/home.model";
 
-const Hero = ({ heroSectionData }: HeroSectionProps) => {
+const Hero = ({ heroSectionData }: { heroSectionData: HeroSectionProps }) => {
   const cardOneData = heroSectionData?.heroLinkCards?.cardOne;
   const cardTwoData = heroSectionData?.heroLinkCards?.cardTwo;
   const impactMetricsData = heroSectionData?.impactMetrics;

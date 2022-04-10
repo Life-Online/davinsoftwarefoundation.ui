@@ -9,13 +9,13 @@ import styles from "../../styles/body/body.module.scss";
 }
 function Body() {
   return (
-    <div className={`my-5 ${styles.bodyContainer}`}>
-      <section>
+    <div>
+      {/* <section>
         <Experience />
       </section>
       <section>
         <Together />
-      </section>
+      </section> */}
     </div>
   );
 }

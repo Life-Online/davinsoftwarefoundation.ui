@@ -4,15 +4,14 @@ import Link from "next/link";
 import { DateTime } from "luxon";
 import { Button } from "react-bootstrap";
 import styles from "./campaignCard.module.scss";
-import { CampaignCard } from "../../models/shared.model";
+import { CampaignModel } from "../../models/shared.model";
 
 function CampaignCard({
   campaignPreviewData,
 }: {
-  campaignPreviewData: CampaignCard;
+  campaignPreviewData: CampaignModel;
 }) {
-  console.log(campaignPreviewData.campaignDate);
-  const _date = DateTime.fromISO(campaignPreviewData.campaignDate);
+  const _date = DateTime.fromISO(campaignPreviewData.date);
   const campaignDate = _date.toLocaleString(DateTime.DATE_FULL);
 
   return (
@@ -21,8 +20,8 @@ function CampaignCard({
         <div className="col-5">
           <div className="position-relative w-100 h-100">
             <Image
-              src={campaignPreviewData.campaignImageURL}
-              alt={campaignPreviewData.campaingTitle}
+              src={campaignPreviewData.imageURL}
+              alt={campaignPreviewData.title}
               className={styles.campaignImage}
               layout="fill"
             />
@@ -32,10 +31,10 @@ function CampaignCard({
           <div className="h-100 d-flex flex-column justify-content-between py-3 pe-3">
             <div className="">
               <div className={styles.campaingTitle}>
-                {campaignPreviewData.campaingTitle}
+                {campaignPreviewData.title}
               </div>
               <div className={styles.campaingBody}>
-                {campaignPreviewData.campaignBody}
+                {campaignPreviewData.body}
               </div>
               <div className={styles.campaingDate}>
                 {" "}
