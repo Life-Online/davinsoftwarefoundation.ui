@@ -97,3 +97,15 @@ export type LinkCardModel = {
   link: string;
   emphasizedText: string;
 };
+
+export type CallToActionProps = {
+  message: string;
+  imageURL: string;
+  links: CallToActionLink[];
+};
+
+export type CallToActionLink = {
+  text: string;
+  style: string;
+  link: string;
+};

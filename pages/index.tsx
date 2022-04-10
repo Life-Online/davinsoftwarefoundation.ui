@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Body from "../components/body/index";
 import Hero from "../components/sections/Hero";
 import SectionTitleLeft from "../components/shared/SectionTitleLeft";
 import AboutPreview from "../components/sections/AboutPreview";
@@ -21,7 +20,6 @@ const Home: NextPage = () => {
       <AboutPreview aboutPreviewData={AboutPreviewData} />
       <CampaignPreview campaignPreviewData={CampaignPreviewData} />
       <StoriesPreview storiesPreview={StoriesPreviewData} />
-      <Body />
     </div>
   );
 };

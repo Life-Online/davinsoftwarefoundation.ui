@@ -1,7 +1,20 @@
-export const TogetherData = [
+import { CallToActionProps } from "../models/shared.model";
+
+const CallToActionData: CallToActionProps = {
+  message: "Together we can make a difference",
+  imageURL: "/img/",
+  links: [
     {
-        title: 'Together we can make a difference',
-        btnText1: 'Make a Donation',
-        btnText2: 'Volounteer for a Campaign'
-    }
-]
+      text: "Make a Donation",
+      style: "secondary",
+      link: "/donate",
+    },
+    {
+      text: "Volunteer for a Campaign",
+      style: "primary",
+      link: "/volunteer",
+    },
+  ],
+};
+
+export default CallToActionData;
