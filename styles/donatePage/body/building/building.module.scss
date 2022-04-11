@@ -1,0 +1,201 @@
+
+.containerBuild{
+    background-color: #55baba;
+    height: 100%;
+    .wrapperBuild {
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .buildLeftContainer{
+        width: 45%;
+       
+
+        .leftTitle{
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .leftText{
+            font-size: 20px;
+            color: white;
+        }
+    }
+    .buildRightContainer{
+        background-color: white;
+        width: 450px;
+        border-radius: 10px;
+        .buildRightWrapper{
+            padding: 10px 40px 0px ;
+
+            .bibleProjectText{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .howOften{
+                margin: 20px 0px;
+                padding-bottom: 10px;
+                select{
+                    background-color: #55baba;
+                    padding: 10px;
+                }
+                .oftenText{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .oftenBtns{
+                    border-radius: none !important;
+                .oftenBtn{
+                    width: 47%;
+                    padding: 15px 30px !important;
+                    outline: none;
+                    background-color: #DFEEF3;
+                    color: #5b5959;
+                    font-size: 18px;
+                    font-weight: bold;
+                    &:hover{
+                        background-color: #bad8e4;
+                        cursor: pointer;
+                    } 
+                }
+                .oftenBtn2{
+                    border-radius: 0px  30px   30px 0px !important;
+                }
+                .oftenBtn1{
+                    border-radius: 30px  0px   0px 30px !important;
+                }
+              }
+            }
+            .howMuch{
+                margin: 10px 0px;
+                padding-bottom: 10px;
+                .howMuchText{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .howMuchBtn{
+                    width: 30%;
+                    padding: 20px;
+                    background-color: #DFEEF3;
+                    color: #5b5959;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border-radius: 0px;
+                    &:hover{
+                        background-color: #bad8e4;
+                        cursor: pointer;
+                    }
+                } 
+            }
+            .InputContainer{
+               
+                background-color: #DFEEF3 !important;
+                color: #5b5959;
+                &:focus{
+                    outline: none !important;
+                }
+                .inputText{
+                    background-color: #DFEEF3 !important;
+                    color: #5b5959;
+                    font-size: 20px;
+                    font-weight: bold;
+                    outline: none;
+                    &:focus{
+                        outline: none !important;
+                        border-color: none !important;
+                    }
+                }
+            }
+        }
+        .giveNowBtn{
+            padding: 15px;
+            background-color: #77E9E9;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+
+            &:hover{
+                cursor:  not-allowed;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 769px){
+    .containerBuild{
+        .buildLeftContainer{
+            width: 100% !important;
+            .leftTitle{
+                font-size: 35px;
+                width: 100%;
+            }
+        }
+        .buildRightContainer{
+            height: 450px;
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    .containerBuild{
+       
+        .buildLeftContainer{
+            width: 100% !important;
+        }
+        .buildRightContainer{}
+    }
+}
+@media only screen and (max-width: 768px){
+    .containerBuild{
+        .buildRightContainer{
+            width: 400px !important;
+            .bibleProjectText{
+                font-size: 25px !important;
+                font-weight: bold;
+                margin-bottom: 5px !important;
+            }
+            
+            .howOften{
+                margin: 1px 0px !important;
+                padding-bottom: 0px !important;
+                select{
+                    padding: 5px !important;
+                }
+                .oftenText{
+                    font-size: 18px !important;
+                }
+                .oftenBtn{
+                    // width: 50% !important;
+                    padding: 10px !important;
+                    font-size: 14px !important;
+        
+                }
+              
+            }
+            .howMuch{
+                margin: 10px 0px;
+                padding-bottom: 10px;
+                .howMuchText{
+                    font-size: 14px !important;
+                    font-weight: bold;
+                }
+                .howMuchBtn{
+                    width: 30%;
+                    padding: 10px !important;
+                    font-size: 18px;
+                    border-radius: 0px;
+                   
+                } 
+            }
+            .InputContainer{
+                .inputText{
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}

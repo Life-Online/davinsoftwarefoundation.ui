@@ -1,0 +1,61 @@
+@use "./global.variables" as vars;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin shadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+}
+
+@mixin transition($property) {
+  will-change: $property;
+  -webkit-transform: $property 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+  -moz-transform: $property 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+  -ms-transform: $property 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+  transition: $property 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+
+@mixin transition-time($property, $time) {
+  will-change: $property;
+  -webkit-transform: $property $time cubic-bezier(0.2, 0, 0, 1) 0s;
+  -moz-transform: $property $time cubic-bezier(0.2, 0, 0, 1) 0s;
+  -ms-transform: $property $time cubic-bezier(0.2, 0, 0, 1) 0s;
+  transition: $property $time cubic-bezier(0.2, 0, 0, 1) 0s;
+}
+
+@mixin primary-button {
+  background-color: vars.$primary;
+  color: vars.$white;
+  border-radius: 30px;
+  font-weight: 500;
+  @include transition(all);
+
+  &:hover,
+  &:active {
+    color: vars.$white;
+    background-color: vars.$primary-hover;
+  }
+}
+
+@mixin secondary-button {
+  background-color: vars.$white;
+  color: vars.$primary;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  @include transition(all);
+
+  &:hover,
+  &:active {
+    border: none;
+    color: vars.$primary-hover;
+    background-color: vars.$white-hover;
+  }
+}

@@ -1,0 +1,27 @@
+@use "../../../styles/global.variables" as vars;
+@use "../../../styles/global.mixins" as mixins;
+
+.mainNav {
+  background: vars.$white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+
+  a {
+    color: vars.$black;
+    font-weight: 500;
+
+    &:hover {
+      color: vars.$primary;
+    }
+  }
+
+  .active {
+    color: vars.$primary;
+  }
+
+  .navCta {
+    @include mixins.primary-button;
+  }
+}

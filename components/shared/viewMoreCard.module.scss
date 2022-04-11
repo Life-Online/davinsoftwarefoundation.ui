@@ -1,0 +1,24 @@
+@use "../../styles/global.variables" as vars;
+@use "../../styles/global.mixins" as mixins;
+
+.viewMoreCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: vars.$primary;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  height: 100%;
+  border-radius: vars.$border-radius;
+
+  .linkArrow {
+    margin-left: 0.5rem;
+    width: 1rem;
+    @include mixins.transition(all);
+  }
+
+  &:hover {
+    .linkArrow {
+      transform: translateX(10px);
+    }
+  }
+}

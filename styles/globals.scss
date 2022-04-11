@@ -1,0 +1,50 @@
+@import "bootstrap.custom";
+@import "./about.scss";
+
+@font-face {
+  font-family: "Aeonik";
+  src: local("Aeonik"), url(../assets/fonts/Aeonik/Aeonik-Air.ttf) format("ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Aeonik;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+main {
+  margin-top: 73px;
+  overflow-x: hidden;
+}
+
+section + section {
+  margin-top: 100px !important;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.swiper {
+  overflow: visible !important;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
+.swiper-slide {
+  height: unset !important;
+}

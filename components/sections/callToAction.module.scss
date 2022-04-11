@@ -1,0 +1,54 @@
+@use "../../styles/global.variables" as vars;
+@use "../../styles/global.mixins" as mixins;
+
+.CTAMessageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 300px;
+  padding: 10%;
+  background: vars.$primary;
+  color: vars.$white;
+  border-top-left-radius: vars.$border-radius;
+  border-bottom-left-radius: vars.$border-radius;
+
+  .CTAMessage {
+    font-size: vars.$header-2;
+    line-height: 1.3;
+    font-weight: 500;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .primaryButton {
+    @include mixins.primary-button;
+  }
+
+  .secondaryButton {
+    @include mixins.secondary-button;
+  }
+}
+
+.CTAImageContianer {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: vars.$border-radius;
+  border-bottom-right-radius: vars.$border-radius;
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 0;
+  background-size: cover;
+  background-position: right;
+}
+
+.CTAImageBorder {
+  border: solid 5px vars.$white;
+  border-left: none;
+  border-top-right-radius: vars.$border-radius;
+  border-bottom-right-radius: vars.$border-radius;
+  height: 100%;
+}

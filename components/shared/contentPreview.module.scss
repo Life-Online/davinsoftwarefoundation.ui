@@ -1,0 +1,29 @@
+@use "../../styles/global.mixins" as mixins;
+@use "../../styles/global.variables" as vars;
+
+.previewImageContainer {
+  width: 90%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.previewContentContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.previewContentTitle {
+  font-size: vars.$header-1;
+  color: vars.$secondary;
+  line-height: 1.3;
+  font-weight: 500;
+  padding: 10px 0 0;
+}
+
+.actionButton {
+  @include mixins.primary-button;
+}

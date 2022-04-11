@@ -1,0 +1,54 @@
+@use "../../../styles/global.variables" as vars;
+@use "../../../styles/global.mixins" as mixins;
+
+.footerContainer {
+  background-color: #2a2b2a;
+  width: 100% !important;
+
+  ul {
+    padding: 0;
+
+    li {
+      color: vars.$white;
+      text-decoration: none !important;
+      list-style: none;
+      margin-bottom: 15px;
+
+      a {
+        color: vars.$white;
+        @include mixins.transition(all);
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  .socialLinks {
+    font-size: 1rem;
+    color: vars.$white;
+    margin-right: 1rem;
+    @include mixins.transition(all);
+
+    &:hover {
+      color: vars.$white-hover;
+      transform: scale(1.1);
+    }
+  }
+
+  .footerHeader {
+    color: vars.$white;
+    opacity: 0.75;
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    color: vars.$white;
+    opacity: 0.75;
+    margin-top: 3rem;
+    border-top: 1px solid #666666;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+}

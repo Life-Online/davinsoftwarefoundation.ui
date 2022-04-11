@@ -1,0 +1,31 @@
+@use "../../styles/global.mixins" as mixins;
+
+.swiperControlContainer {
+  display: flex;
+  justify-content: space-between;
+
+  .swiperControl svg {
+    height: 2.25rem;
+    cursor: pointer;
+    color: #ea4d37;
+  }
+
+  .linkArrow {
+    margin-left: 5px;
+    width: 1rem;
+    @include mixins.transition(all);
+  }
+
+  .viewMoreButton {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      .linkArrow {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use "../../styles/global.variables" as vars;
+
+.title {
+  flex: 1;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  color: vars.$secondary;
+
+  &.display {
+    font-size: vars.$display;
+  }
+
+  &.header1 {
+    font-size: vars.$header-1;
+  }
+
+  &.header2 {
+    font-size: vars.$header-2;
+  }
+
+  &.header3 {
+    font-size: vars.$header-3;
+  }
+
+  .emphasizedTitle {
+    color: #eb4c29;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    width: 300px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    height: 100px;
+  }
+}
