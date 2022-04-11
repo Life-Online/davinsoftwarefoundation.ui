@@ -2,7 +2,7 @@ import { CallToActionProps } from "../models/shared.model";
 
 const CallToActionData: CallToActionProps = {
   message: "Together we can make a difference",
-  imageURL: "/img/",
+  imageURL: "/img/cta-cover.png",
   links: [
     {
       text: "Make a Donation",

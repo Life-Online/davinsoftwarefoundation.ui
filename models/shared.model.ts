@@ -106,6 +106,6 @@ export type CallToActionProps = {
 
 export type CallToActionLink = {
   text: string;
-  style: string;
+  style: "primary" | "secondary";
   link: string;
 };

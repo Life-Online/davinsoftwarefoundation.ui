@@ -43,3 +43,19 @@
     background-color: vars.$primary-hover;
   }
 }
+
+@mixin secondary-button {
+  background-color: vars.$white;
+  color: vars.$primary;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  @include transition(all);
+
+  &:hover,
+  &:active {
+    border: none;
+    color: vars.$primary-hover;
+    background-color: vars.$white-hover;
+  }
+}

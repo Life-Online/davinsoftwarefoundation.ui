@@ -1,50 +1,54 @@
+@use "../../../styles/global.variables" as vars;
+@use "../../../styles/global.mixins" as mixins;
 
-.footerContainer{
-    background-color:  #2A2B2A;
-    width: 100% !important;
-    height: 352px;
-}
-.footerColOne{
-    width: 100px;
-    height: 241px;
+.footerContainer {
+  background-color: #2a2b2a;
+  width: 100% !important;
 
-}
-.footerColTwo{
-    width: 555px;
-    height: 241px;
- 
-}
-.footerColOneText{
-    width: 70%;
-    font-size: 16px;
-    font-weight: normal;
-    padding: 1rem 0px;
-}
-.footerFoundation{
-    width: 268px;
-    height: 92px;
-}
-.footerInvolved{
-    width: 287px;
-}
-.footerFoundationUl{
-    max-width: 200px  !important;
-    word-wrap: break-word;
-}
-.footerHeader{
-    color: #fff;
-    opacity: 0.5;
-}
-.footerContainer li{
-    text-decoration: none !important;
-    list-style: none;
-    margin-bottom: 5px;
-    padding: 5px;
-    a{
-        color: white !important;
-        &:hover{
-            color: white !important;
-            opacity: 0.5;
+  ul {
+    padding: 0;
+
+    li {
+      color: vars.$white;
+      text-decoration: none !important;
+      list-style: none;
+      margin-bottom: 15px;
+
+      a {
+        color: vars.$white;
+        @include mixins.transition(all);
+
+        &:hover {
+          opacity: 0.75;
         }
+      }
     }
+  }
+
+  .socialLinks {
+    font-size: 1rem;
+    color: vars.$white;
+    margin-right: 1rem;
+    @include mixins.transition(all);
+
+    &:hover {
+      color: vars.$white-hover;
+      transform: scale(1.1);
+    }
+  }
+
+  .footerHeader {
+    color: vars.$white;
+    opacity: 0.75;
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    color: vars.$white;
+    opacity: 0.75;
+    margin-top: 3rem;
+    border-top: 1px solid #666666;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
 }
