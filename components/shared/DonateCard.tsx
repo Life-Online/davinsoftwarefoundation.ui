@@ -227,7 +227,7 @@ function DonateCard({ donationData }: { donationData: DonationProps }) {
   }, [firstName, lastName, email, phoneNumber]);
 
   const config = {
-    public_key: "FLWPUBK_TEST-4d4d678a27d626e61cbfcd7f91746e5b-X",
+    public_key: "FLWPUBK-c0cfdc6ebc8a6098727674e87bc37db1-X",
     tx_ref: `date-${Date.now()}_purpose-${donationType.value}-donation${
       donationType.value === "campaign" ? `_campaign-${campaign.value}` : ""
     }`,
