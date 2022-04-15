@@ -4,7 +4,7 @@ import Image from "next/image";
 const About: NextPage = () => {
   return (
     <div>
-      <div className="page-wrapper">
+      {/* <div className="page-wrapper">
         <div className="stricky-header stricked-menu main-menu">
           <section className="about-page">
             <div className="container">
@@ -385,7 +385,7 @@ const About: NextPage = () => {
             </div>
           </section>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

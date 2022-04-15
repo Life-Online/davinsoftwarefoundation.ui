@@ -30,21 +30,27 @@ function Footer() {
                   communities.
                 </p>
                 <div className="d-flex align-items-center">
-                  <Link href="/home">
-                    <a>
-                      <FaFacebookF className={styles.socialLinks} />
-                    </a>
-                  </Link>
-                  <Link href="/home">
-                    <a>
-                      <FaInstagram className={styles.socialLinks} />
-                    </a>
-                  </Link>
-                  <Link href="/home">
-                    <a>
-                      <FaTwitter className={styles.socialLinks} />
-                    </a>
-                  </Link>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/davinfoundation"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookF className={styles.socialLinks} />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/davinfoundation/"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram className={styles.socialLinks} />
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/davinfoundation"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter className={styles.socialLinks} />
+                  </a>
                 </div>
               </div>
               <div className="col-md-7 col-12">
@@ -59,7 +65,7 @@ function Footer() {
                           <a>Home</a>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/about">
                           <a>About</a>
                         </Link>
@@ -89,7 +95,7 @@ function Footer() {
                             </svg>
                           </a>
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className={`col`}>
@@ -101,7 +107,7 @@ function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/volunteer">
+                        <Link href="https://form.jotform.com/221046933078557">
                           <a>Volunteer</a>
                         </Link>
                       </li>
@@ -110,11 +116,11 @@ function Footer() {
                   <div className={`col`}>
                     <h6 className={styles.footerHeader}>Help</h6>
                     <ul className="flex flex-column justify-center items-center ">
-                      <li>
+                      {/* <li>
                         <Link href="/contact">
                           <a>Contact</a>
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>

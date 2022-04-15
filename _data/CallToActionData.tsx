@@ -12,7 +12,7 @@ const CallToActionData: CallToActionProps = {
     {
       text: "Volunteer for a Campaign",
       style: "primary",
-      link: "/volunteer",
+      link: "https://form.jotform.com/221046933078557",
     },
   ],
 };

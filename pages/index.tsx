@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Hero heroSectionData={HeroSectionData} />
       <AboutPreview aboutPreviewData={AboutPreviewData} />
       <CampaignPreview campaignPreviewData={CampaignPreviewData} />
-      <StoriesPreview storiesPreview={StoriesPreviewData} />
+      {/* <StoriesPreview storiesPreview={StoriesPreviewData} /> */}
       <CallToAction CTAData={CallToActionData} />
     </div>
   );

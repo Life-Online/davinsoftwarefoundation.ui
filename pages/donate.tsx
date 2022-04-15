@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import DonateContainer from "../components/sections/DonateContainer";
-import DonationData from "../_data/buildingData";
+import DonationData from "../_data/DonationData";
 
 const Donate: NextPage = () => {
   return (

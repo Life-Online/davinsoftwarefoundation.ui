@@ -9,31 +9,10 @@ const CampaignPreviewData: CampaignPreviewProps = {
   },
   campaigns: [
     {
-      title: "A visit to Ikosi Schools",
-      body: "We will be teaching young boys and girls in Ikosi how to write Java",
-      id: 3,
-      date: "2022-01-22",
-      imageURL: "/img/campaign-ikosi.png",
-    },
-    {
-      title: "A visit to Vigilant Heart Charitable Society",
-      body: "We will be teaching young boys and girls in Ikosi how to write Java",
+      title: "Vigilant Heart Charitable Society",
+      body: "The ultimate goal of this initiative is to make sure we inculcate in as many persons as possible these skills needed to build modern web applications",
       id: 1,
       date: "2022-04-16",
-      imageURL: "/img/campaign-obalende.png",
-    },
-    {
-      title: "A visit to Ketu Schools",
-      body: "We will be teaching young boys and girls in Ikosi how to write Java",
-      id: 2,
-      date: "2022-06-05",
-      imageURL: "/img/campaign-ketu.png",
-    },
-    {
-      title: "A visit to Ketu Schools",
-      body: "We will be teaching young boys and girls in Ikosi how to write Java",
-      id: 2,
-      date: "2022-06-05",
       imageURL: "/img/campaign-ketu.png",
     },
   ],

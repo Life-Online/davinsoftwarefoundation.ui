@@ -23,13 +23,13 @@ const HeroData = {
     cardOne: {
       imageURL: "/img/link-card-volunteer.png",
       text: "Become a Volunteer",
-      link: "./",
+      link: "https://form.jotform.com/221046933078557",
       emphasizedText: "Volunteer",
     },
     cardTwo: {
       imageURL: "/img/link-card-campaign.png",
       text: "Find a Campaign",
-      link: "./",
+      link: "#campaigns",
       emphasizedText: "Campaign",
     },
   },

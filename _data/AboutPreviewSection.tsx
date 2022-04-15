@@ -4,8 +4,8 @@ const AboutPreviewData = {
     sectionTag: "About Us",
     imageURL: "/img/community.png",
     title: "We are building a community",
-    text: "Our vision is to build a community that is ever growing and ever willing to lend a hand to others through the use of technology.",
-    link: "/about",
+    text: "Davin Software Foundation is founded on a vision of driving mass literacy and empowerment of African Children and Young Adults with advanced technological knowledge, skills and competence to positively impact the society.",
+    link: "",
   },
 };
 export default AboutPreviewData;

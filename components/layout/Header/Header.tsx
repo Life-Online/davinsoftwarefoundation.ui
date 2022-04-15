@@ -9,10 +9,10 @@ import { ActivePageLinks } from "../../../models/home.model";
 
 const topRoutes: { route: string; pathName: string; label: string }[] = [
   { route: "/", pathName: "home", label: "Home" },
-  { route: "/about", pathName: "about", label: "About" },
-  { route: "/campaigns", pathName: "campaigns", label: "Campaigns" },
-  { route: "/stories", pathName: "stories", label: "Our Stories" },
-  { route: "/contact", pathName: "contact", label: "Contact" },
+  // { route: "/about", pathName: "about", label: "About" },
+  // { route: "/campaigns", pathName: "campaigns", label: "Campaigns" },
+  // { route: "/stories", pathName: "stories", label: "Our Stories" },
+  // { route: "/contact", pathName: "contact", label: "Contact" },
 ];
 
 const initialLinkState: ActivePageLinks = {
@@ -88,8 +88,7 @@ function Header() {
           </div>
           <Navbar.Collapse
             id="main-navbar"
-            className={`${styles.navCollapse}`}
-            style={{ opacity: expanded ? 1 : 0 }}
+            className={`${styles.navCollapse} justify-content-md-end`}
           >
             <Nav>
               <div className="d-flex flex-column flex-md-row mt-3 mt-md-0">
