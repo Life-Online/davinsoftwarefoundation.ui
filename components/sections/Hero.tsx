@@ -13,7 +13,7 @@ const Hero = ({ heroSectionData }: { heroSectionData: HeroSectionProps }) => {
   return (
     <section className="row overflow-hidden mt-5">
       <div className="position-relative w-100">
-        <div className="col-11">
+        <div className="col-12 col-md-11">
           <div className={styles.heroSpotLightContainer}>
             <Image
               className={styles.heroImage}
@@ -21,8 +21,7 @@ const Hero = ({ heroSectionData }: { heroSectionData: HeroSectionProps }) => {
               alt=""
               width={1080}
               height={520}
-              objectFit="contain"
-              layout="responsive"
+              layout="fill"
             />
           </div>
         </div>
@@ -30,7 +29,7 @@ const Hero = ({ heroSectionData }: { heroSectionData: HeroSectionProps }) => {
           {cardOneData ? <LinkCard linkCardData={cardOneData} /> : ""}
         </div>
       </div>
-      <div className="col-4 position-relative">
+      <div className="col-md-4 col-12 position-relative">
         <div className={styles.dotGridContainer}>
           <Image src="/img/dot-grid.svg" width={150} height={150} />
         </div>
@@ -38,7 +37,7 @@ const Hero = ({ heroSectionData }: { heroSectionData: HeroSectionProps }) => {
           {cardTwoData ? <LinkCard linkCardData={cardTwoData} /> : ""}
         </div>
       </div>
-      <div className="col-7">
+      <div className="col-md-7 col-12">
         <ImpactMetrics impactMetricsData={impactMetricsData} />
       </div>
     </section>

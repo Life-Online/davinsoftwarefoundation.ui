@@ -11,14 +11,14 @@ const SectionTitleLeft = ({
   return (
     <React.Fragment>
       <section className="row justify-content-between items-center py-3 mb-3">
-        <div className="col-7">
+        <div className="col-12 col-md-7">
           <EmphasizedTitle
             title={sectionTitlelData.title}
             emphasizedTitle={sectionTitlelData.emphasizedTitle}
             titleSize={sectionTitlelData.titleSize}
           />
         </div>
-        <div className={`col-5 pt-3 ${styles.content}`}>
+        <div className={`col-12 col-md-5 pt-3 ${styles.content}`}>
           {sectionTitlelData.text}
         </div>
       </section>

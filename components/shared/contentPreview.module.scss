@@ -27,3 +27,11 @@
 .actionButton {
   @include mixins.primary-button;
 }
+
+@media (max-width: 768px) {
+  .previewContentContainer,
+  .previewImageContainer {
+    justify-content: center;
+    width: 100%;
+  }
+}

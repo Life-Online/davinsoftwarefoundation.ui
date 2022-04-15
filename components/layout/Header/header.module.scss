@@ -3,10 +3,7 @@
 
 .mainNav {
   background: vars.$white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  white-space: nowrap;
 
   a {
     color: vars.$black;
@@ -17,11 +14,34 @@
     }
   }
 
+  .navCollapse {
+    width: 100%;
+    @include mixins.transition(all);
+  }
+
   .active {
     color: vars.$primary;
   }
 
   .navCta {
     @include mixins.primary-button;
+  }
+
+  .logoContainer {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainNav {
+    flex-direction: column;
+  }
+
+  .logoContainer {
+    width: 250px !important;
+  }
+
+  .navCta {
+    width: 100%;
   }
 }

@@ -1,0 +1,162 @@
+@use "../../styles/global.variables" as vars;
+@use "../../styles/global.mixins" as mixins;
+
+.donationCard {
+  padding: 2rem 0;
+  border-radius: 15px;
+  border: 1px solid #dee2e6 !important;
+
+  @mixin button-base {
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    background: whitesmoke;
+    border: 1px solid #dee2e6;
+    border-radius: 30px;
+    font-weight: 700;
+    @include mixins.transition(all);
+  }
+
+  .cardTitle {
+    padding: 0 1.5rem;
+    font-size: vars.$header-6;
+    font-weight: 700;
+  }
+
+  .subsection {
+    padding: 1.25rem 1.5rem;
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .donationTypeWrappper {
+    display: flex;
+    gap: 15px;
+  }
+
+  .donationType {
+    @include button-base();
+    border-radius: 0 !important;
+    flex-basis: 50%;
+  }
+
+  .donationType:first-of-type {
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+  }
+
+  .donationType:last-of-type {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+  }
+
+  .amountButtonsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amountButton.selectedButton,
+  .donationType.selectedButton {
+    @include mixins.primary-button;
+  }
+
+  .actionButton {
+    @include mixins.primary-button;
+  }
+
+  .amountButton {
+    flex-basis: calc(33.3333333333% - 10px);
+    @include button-base;
+  }
+
+  .combinedInput {
+    display: flex;
+    gap: 15px;
+  }
+
+  .inputContainer {
+    flex-basis: 100%;
+  }
+
+  .inputWrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .inputLabel {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    @include mixins.transition(all);
+  }
+
+  .inputWrapper:focus-within .inputLabel,
+  .inputLabel.smallLabel {
+    font-size: 0.6rem;
+    top: 11px;
+  }
+
+  .input,
+  .select {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .input {
+    z-index: 10;
+    position: relative;
+    background: transparent;
+  }
+
+  .navigationBtn {
+    @include mixins.primary-button;
+    width: 2rem;
+    border-radius: 7.5px;
+    padding: 0.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .error {
+    color: rgb(223, 0, 0);
+    font-size: 0.75rem;
+    padding: 5px 0;
+  }
+
+  .pretext {
+    position: absolute;
+    height: 100%;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-right: 1px solid #ced4da;
+  }
+
+  .inputText {
+    padding-left: 3.5rem;
+  }
+
+  .required::after {
+    content: "*";
+    margin-left: 3px;
+    position: relative;
+    color: rgb(230, 0, 0);
+  }
+
+  .PhoneLabel {
+    left: calc(0.75rem + 42px);
+  }
+}

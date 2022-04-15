@@ -11,14 +11,14 @@ const SectionTitleCenter = ({
   return (
     <React.Fragment>
       <section className="row d-flex flex-column align-items-center py-3 mb-3 text-center">
-        <div className="col-6">
+        <div className="col-md-6 col-12">
           <EmphasizedTitle
             title={sectionTitlelData.title}
             emphasizedTitle={sectionTitlelData.emphasizedTitle}
             titleSize={sectionTitlelData.titleSize}
           />
         </div>
-        <div className={`col-7 pt-3 ${styles.content}`}>
+        <div className={`col-md-7 col-12 pt-3 ${styles.content}`}>
           {sectionTitlelData.text}
         </div>
       </section>

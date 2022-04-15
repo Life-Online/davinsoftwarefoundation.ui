@@ -6,7 +6,7 @@ import styles from "./callToAction.module.scss";
 
 function CallToAction({ CTAData }: { CTAData: CallToActionProps }) {
   return (
-    <section className="row pb-5">
+    <section className="row pb-5 d-none d-md-block">
       <div className="col-8 pe-0">
         <div className={styles.CTAMessageContainer}>
           <div className={styles.CTAMessage}>{CTAData.message}</div>

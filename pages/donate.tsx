@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
-import DonatePage from "../components/donatePage/home";
+import DonateContainer from "../components/sections/DonateContainer";
+import DonationData from "../_data/buildingData";
 
 const Donate: NextPage = () => {
   return (
     <div className="container page-container">
-      <DonatePage />
+      <DonateContainer donationData={DonationData} />
     </div>
   );
 };

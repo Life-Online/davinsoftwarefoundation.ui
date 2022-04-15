@@ -109,3 +109,11 @@ export type CallToActionLink = {
   style: "primary" | "secondary";
   link: string;
 };
+
+export type DonationOptions = number[];
+
+export type DonationProps = {
+  sectionTitle: SectionTitleModel;
+  campaigns: CampaignModel[];
+  donationOptions: DonationOptions;
+};
