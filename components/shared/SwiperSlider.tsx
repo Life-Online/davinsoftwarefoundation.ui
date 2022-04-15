@@ -13,10 +13,31 @@ function SwiperSlider({
   link: string;
 }) {
   return (
-    <Swiper spaceBetween={40} slidesPerView={2.5}>
+    <Swiper
+      spaceBetween={20}
+      slidesPerView={1.1}
+      breakpoints={{
+        480: {
+          width: 480,
+          slidesPerView: 1.25,
+        },
+        768: {
+          width: 768,
+          slidesPerView: 1.5,
+        },
+        992: {
+          width: 922,
+          slidesPerView: 2,
+        },
+        1200: {
+          width: 922,
+          slidesPerView: 2.5,
+        },
+      }}
+    >
       <SwiperControls />
       {carouselList.map((ReactElement, id) => (
-        <SwiperSlide className="pt-3" key={`item-${id}`}>
+        <SwiperSlide className="" key={`item-${id}`}>
           {ReactElement}
         </SwiperSlide>
       ))}

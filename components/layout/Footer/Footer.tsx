@@ -14,7 +14,7 @@ function Footer() {
         <div className="col-12">
           <div className="container">
             <div className="row">
-              <div className="col-5 py-5 pe-5">
+              <div className="col-md-5 col-12 py-3 py-md-5 pe-md-5">
                 <Link href="/home">
                   <a>
                     <Image
@@ -47,7 +47,7 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="col-7">
+              <div className="col-md-7 col-12">
                 <div className="row">
                   <div className={`col`}>
                     <h6 className={styles.footerHeader}>Foundation</h6>

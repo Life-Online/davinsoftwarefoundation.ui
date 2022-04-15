@@ -1,5 +1,5 @@
 import React from "react";
-import ContentPreview from "../shared/contentPreview";
+import ContentPreview from "../shared/ContentPreview";
 import { ContentPreviewProps } from "../../models/shared.model";
 
 function AboutPreview({
@@ -8,7 +8,7 @@ function AboutPreview({
   aboutPreviewData: ContentPreviewProps;
 }) {
   return (
-    <section className="row py-5">
+    <section className="py-md-5 py-3">
       <ContentPreview contentPreview={aboutPreviewData} />
     </section>
   );

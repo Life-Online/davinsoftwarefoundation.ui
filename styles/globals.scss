@@ -48,3 +48,21 @@ section + section {
 .swiper-slide {
   height: unset !important;
 }
+
+.PhoneInputInput {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  &:active,
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section + section {
+    margin-top: 75px !important;
+  }
+}
