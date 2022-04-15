@@ -42,13 +42,13 @@ function CampaignCard({
               </div>
             </div>
             <div className="">
-              <Link href={`/campaigns/${campaignPreviewData.id}`}>
+              {/* <Link href={`/campaigns/${campaignPreviewData.id}`}>
                 <a>
                   <Button className={`px-4 py-2 ${styles.actionButton}`}>
                     Details
                   </Button>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

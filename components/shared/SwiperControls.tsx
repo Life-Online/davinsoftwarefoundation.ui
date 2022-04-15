@@ -44,7 +44,7 @@ function SwiperControls({ link = "/campaigns" }: { link?: string }) {
           </svg>
         </div>
       </div>
-      {link ? (
+      {/* {link ? (
         <Link href={link}>
           <a>
             <div className={styles.viewMoreButton}>
@@ -54,7 +54,7 @@ function SwiperControls({ link = "/campaigns" }: { link?: string }) {
         </Link>
       ) : (
         ""
-      )}
+      )} */}
     </div>
   );
 }

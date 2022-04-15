@@ -41,9 +41,9 @@ function SwiperSlider({
           {ReactElement}
         </SwiperSlide>
       ))}
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <ViewMoreCard link={link} />
-      </SwiperSlide>
+      </SwiperSlide> */}
     </Swiper>
   );
 }

@@ -10,7 +10,7 @@ const CampaignPreviewData: CampaignPreviewProps = {
   campaigns: [
     {
       title: "Vigilant Heart Charitable Society",
-      body: "The ultimate goal of this initiative is to make sure we inculcate in as many persons as possible these skills needed to build moder web applications",
+      body: "The ultimate goal of this initiative is to make sure we inculcate in as many persons as possible these skills needed to build modern web applications",
       id: 1,
       date: "2022-04-16",
       imageURL: "/img/campaign-ketu.png",
