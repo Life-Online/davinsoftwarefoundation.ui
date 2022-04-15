@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
-import Image from 'next/image'
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-  <div>
-     <div className="preloader">
+    <div>
+      {/* <div className="preloader">
         <Image className="preloader__image" width="60" src="assets/images/loader.png" alt="" />
     </div>
     <div className="page-wrapper">
@@ -134,9 +134,9 @@ const Home: NextPage = () => {
             </div>
         </section>
     </div>
-    <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><i className="fa fa-angle-up"></i></a>
-  </div>
-  )
+    <a href="#" data-target="html" className="scroll-to-target scroll-to-top"><i className="fa fa-angle-up"></i></a> */}
+    </div>
+  );
 };
 
 export default Home;

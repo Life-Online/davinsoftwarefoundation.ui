@@ -9,25 +9,25 @@ import { LinkCardModel } from "../../models/shared.model";
 const LinkCard = ({ linkCardData }: { linkCardData: LinkCardModel }) => {
   return (
     <div className={`card ${styles.linkCard}`}>
-      <Link href={`/${linkCardData.link}`}>
-        <a>
-          <Image
-            src={linkCardData.imageURL}
-            className={`card-img-top p-1 ${styles.linkCardImage}`}
-            alt={linkCardData.text}
-            width={224}
-            height={137}
-            layout="responsive"
+      {/* <Link href={`/${linkCardData.link}`}> */}
+      <a href={linkCardData.link} rel="noopener noreferrer">
+        <Image
+          src={linkCardData.imageURL}
+          className={`card-img-top p-1 ${styles.linkCardImage}`}
+          alt={linkCardData.text}
+          width={224}
+          height={137}
+          layout="responsive"
+        />
+        <div className={`p-2 mx-2 ${styles.linkCardBody}`}>
+          <EmphasizedText
+            text={linkCardData.text}
+            emphasizedText={linkCardData.emphasizedText}
           />
-          <div className={`p-2 mx-2 ${styles.linkCardBody}`}>
-            <EmphasizedText
-              text={linkCardData.text}
-              emphasizedText={linkCardData.emphasizedText}
-            />
-            <ArrowRightIcon className={`${styles.linkCardArrow}`} />
-          </div>
-        </a>
-      </Link>
+          <ArrowRightIcon className={`${styles.linkCardArrow}`} />
+        </div>
+      </a>
+      {/* </Link> */}
     </div>
   );
 };

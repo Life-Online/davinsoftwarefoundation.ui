@@ -19,7 +19,7 @@ function CampaignPreview({
   });
 
   return (
-    <section className="row py-5">
+    <section className="row py-5" id="campaigns">
       <div className="col-12">
         <SectionTag sectionTag={campaignPreviewData.sectionTitle.sectionTag} />
       </div>

@@ -101,7 +101,7 @@ function Footer() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/volunteer">
+                        <Link href="https://form.jotform.com/221046933078557">
                           <a>Volunteer</a>
                         </Link>
                       </li>
@@ -110,11 +110,11 @@ function Footer() {
                   <div className={`col`}>
                     <h6 className={styles.footerHeader}>Help</h6>
                     <ul className="flex flex-column justify-center items-center ">
-                      <li>
+                      {/* <li>
                         <Link href="/contact">
                           <a>Contact</a>
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
