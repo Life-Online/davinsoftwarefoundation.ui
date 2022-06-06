@@ -66,7 +66,7 @@ function Header() {
           className={`${styles.mainNav} d-flex align-items-center w-100 flex-md-row flex-column`}
           as={"header"}
           collapseOnSelect
-          expanded={expanded}
+          // expanded={expanded}
         >
           <div className="d-flex align-items-center w-100 justify-content-between">
             <Navbar.Brand
@@ -83,13 +83,13 @@ function Header() {
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="main-navbar"
-              onClick={() => setExpanded(expanded ? false : true)}
+              // onClick={() => setExpanded(expanded ? false : true)}
             />
           </div>
           <Navbar.Collapse
             id="main-navbar"
             className={`${styles.navCollapse}`}
-            style={{ opacity: expanded ? 1 : 0 }}
+            // style={{ opacity: expanded ? 1 : 0 }}
           >
             <Nav>
               <div className="d-flex flex-column flex-md-row mt-3 mt-md-0">
@@ -99,7 +99,7 @@ function Header() {
                     className={`${
                       activePageLinks?.[item.pathName] ? styles.active : ""
                     } px-3 py-2 text-center`}
-                    onClick={() => setExpanded(false)}
+                    // onClick={() => setExpanded(false)}
                   >
                     <Nav.Link
                       eventKey={item.route}
@@ -115,7 +115,7 @@ function Header() {
                 <a>
                   <Button
                     className={`${styles.navCta} px-4 py-2 ms-md-3 ms-0 mt-3 mt-md-0`}
-                    onClick={() => setExpanded(false)}
+                    // onClick={() => setExpanded(false)}
                   >
                     Donate
                   </Button>
