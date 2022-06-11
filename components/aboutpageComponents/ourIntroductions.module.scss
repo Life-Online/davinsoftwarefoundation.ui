@@ -4,20 +4,17 @@
     position: relative;
     display: block;
     padding: 100px 0 95px;
-    // background-color: red;
 }
 
 .aboutpageleft {
     position: relative;
     display: flex;
     margin-right: 60px;
-    // background-color: green;
 }
 
 .aboutpageimg {
     position: relative;
     display: block;
-    // background-color: purple;
 }
 
 .aboutpageimg:before {
@@ -26,7 +23,7 @@
     left: 0;
     right: 0;
     content: "";
-    background-color: #15c8a0;
+    background-color: #ea4d37;
     height: 10px;
 }
 
@@ -40,7 +37,7 @@
 }
 .sectiontitletagline {
     display: inline-flex;
-    color: #15c8a0;
+    color: #ea4d37;
     font-size: 18px;
     font-weight: 900;
     align-items: center;
@@ -80,7 +77,7 @@
 }
 
 .aboutpagetrusted h3 span {
-    color: #15c8a0;
+    color: #ea4d37;
 }
 
 .aboutpageright {
@@ -100,7 +97,7 @@
 
 .aboutpagerighttitle {
     font-size: 24px;
-    color: #15c8a0;
+    color: #ea4d37;
     font-weight: 900;
     line-height: 34px;
     margin-top: 32px;

@@ -1,36 +1,38 @@
 import React from 'react'
+import styles from './counter.module.scss'
 
 const CountersOne = () => {
   return (
-    <div>
+    <div className={`counters-one about-page-counter ${styles.countersone} ${styles.aboutpagecounter}`}>
        <div className="container">
-              <ul className="counters-one__box list-unstyled">
-                <li className="counter-one__single">
+              <ul className={`counters-one__box list-unstyled ${styles.countersonebox} ${styles.listunstyled}`}>
+                <li className={`counter-one__single ${styles.counteronesingle}`}>
                   <h3 className="odometer" data-count="870">
                     00
                   </h3>
-                  <span className="counter-one__letter">K</span>
-                  <p className="counter-one__text">Total Donations</p>
+                  <span className={`counter-one__letter ${styles.counteroneletter}`}>K</span>
+                  <p className={`counter-one__text ${styles.counteronetext}`}>Total Donations</p>
                 </li>
-                <li className="counter-one__single">
+                <li className={`counter-one__single ${styles.counteronesingle}`}>
                   <h3 className="odometer" data-count="480">
                     00
                   </h3>
-                  <p className="counter-one__text">Campaigns Closed</p>
+                  <span className={`counter-one__letter ${styles.counteroneletter}`}>K</span>
+                  <p className={`counter-one__text ${styles.counteronetext}`}>Campaigns Closed</p>
                 </li>
-                <li className="counter-one__single">
+                <li className={`counter-one__single ${styles.counteronesingle}`}>
                   <h3 className="odometer" data-count="977">
                     00
                   </h3>
-                  <span className="counter-one__letter">K</span>
-                  <p className="counter-one__text">Happy People</p>
+                  <span className={`counter-one__letter ${styles.counteroneletter}`}>K</span>
+                  <p className={`counter-one__text ${styles.counteronetext}`}>Happy People</p>
                 </li>
-                <li className="counter-one__single">
+                <li className={`counter-one__single ${styles.counteronesingle}`}>
                   <h3 className="odometer" data-count="63">
                     00
                   </h3>
-                  <span className="counter-one__letter">+</span>
-                  <p className="counter-one__text">Our Volunteers</p>
+                  <span className={`counter-one__letter ${styles.counteroneletter}`}>+</span>
+                  <p className={`counter-one__text ${styles.counteronetext}`}>Our Volunteers</p>
                 </li>
               </ul>
             </div>

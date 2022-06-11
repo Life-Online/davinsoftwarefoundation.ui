@@ -1,136 +1,65 @@
 import React from 'react';
 import Image from "next/image";
+import styles from './teamOne.module.scss'
+import { TeamOneSection } from '../../_data/TeamOneSection';
+import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/Bs';
 
 const TeamOne = () => {
+  const data = TeamOneSection
   return (
-    <div>
+    <section className={`team-one ${styles.teamone}`}>
        <div className="container">
-              <div className="section-title text-center">
-                <span className="section-title__tagline">
+              <div className={`section-title text-center ${styles.sectiontitle}`}>
+                <span className={`section-title__tagline ${styles.sectiontitletagline}`}>
                   Professional Volunteers
                 </span>
-                <h2 className="section-title__title">
+                <h2 className={`section-title__title ${styles.sectiontitletitle}`}>
                   Meet the best team behind <br /> our success story
                 </h2>
               </div>
               <div className="row">
-                <div className="col-xl-4 col-lg-4">
-                  <div className="team-one__single">
-                    <div className="team-one__img-box">
-                      <div className="team-one__img">
-                        <Image
-                          src="/assets/images/team/team-one-img-1.jpg"
-                          width="500"
-                          height="500"
-                          alt=""
-                        />
+                {data.map((data, id) => (
+                    <div className="col-xl-4 col-lg-4">
+                    <div className={`team-one__single ${styles.teamonesingle}`}>
+                      <div className={`team-one__img-box ${styles.teamoneimgbox}`}>
+                        <div className={`team-one__img ${styles.teamoneimg}`}>
+                          <Image
+                            src={data.img}
+                            width="500"
+                            height="500"
+                            alt=""
+                          />
+                        </div>
+                        <div className={`team-one__member-name ${styles.teamonemembername}`}>
+                          <h2>{data.name}</h2>
+                        </div>
                       </div>
-                      <div className="team-one__member-name">
-                        <h2>Janne</h2>
+                      <div className={`team-one__content ${styles.teamonecontent}`}>
+                        <h4 className={`team-one__member-title ${styles.teamonemembertitle}`}>{data.title}</h4>
+                        <p className={`team-one__text-box ${styles.teamonetextbox}`}>
+                          {data.text}
+                        </p>
                       </div>
-                    </div>
-                    <div className="team-one__content">
-                      <h4 className="team-one__member-title">Volunteer</h4>
-                      <p className="team-one__text-box">
-                        There are many of lorem ipsum available but the have in
-                        some form.
-                      </p>
-                    </div>
-                    <div className="team-one__social">
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-facebook-square"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-dribbble"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram"></i>
-                      </a>
+                      <div className={`team-one__social ${styles.teamonesocial}`}>
+                        <a href="#">
+                          <BsFacebook/>
+                        </a>
+                        <a href="#">
+                         <BsTwitter/>
+                        </a>
+                        <a href="#">
+                         <BsInstagram/>
+                        </a>
+                        <a href="#">
+                        <BsLinkedin/>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-xl-4 col-lg-4">
-                  <div className="team-one__single">
-                    <div className="team-one__img-box">
-                      <div className="team-one__img">
-                        <Image
-                          src="/assets/images/team/team-one-img-2.jpg"
-                          width="500"
-                          height="500"
-                          alt=""
-                        />
-                      </div>
-                      <div className="team-one__member-name">
-                        <h2>David</h2>
-                      </div>
-                    </div>
-                    <div className="team-one__content">
-                      <h4 className="team-one__member-title">Volunteer</h4>
-                      <p className="team-one__text-box">
-                        There are many of lorem ipsum available but the have in
-                        some form.
-                      </p>
-                    </div>
-                    <div className="team-one__social">
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-facebook-square"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-dribbble"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-4 col-lg-4">
-                  <div className="team-one__single">
-                    <div className="team-one__img-box">
-                      <div className="team-one__img">
-                        <Image
-                          src="/assets/images/team/team-one-img-3.jpg"
-                          width="500"
-                          height="500"
-                          alt=""
-                        />
-                      </div>
-                      <div className="team-one__member-name">
-                        <h2>Sarah</h2>
-                      </div>
-                    </div>
-                    <div className="team-one__content">
-                      <h4 className="team-one__member-title">Volunteer</h4>
-                      <p className="team-one__text-box">
-                        There are many of lorem ipsum available but the have in
-                        some form.
-                      </p>
-                    </div>
-                    <div className="team-one__social">
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-facebook-square"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-dribbble"></i>
-                      </a>
-                      <a href="#">
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
-    </div>
+    </section>
   )
 }
 
